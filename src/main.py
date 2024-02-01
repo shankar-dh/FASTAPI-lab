@@ -20,8 +20,8 @@ async def health_ping():
 @app.post("/predict", response_model=IrisResponse)
 async def predict_iris(iris_features: IrisData):
     try:
-        features = [[iris_features.petal_length, iris_features.sepal_length, 
-                    iris_features.petal_width, iris_features.sepal_width]]
+        features = [[iris_features.sepal_length, iris_features.sepal_width,
+                    iris_features.petal_length, iris_features.petal_width]]
 
         prediction = predict_data(features)
         return IrisResponse(response=int(prediction[0]))
