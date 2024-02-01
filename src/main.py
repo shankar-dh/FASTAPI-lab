@@ -25,6 +25,7 @@ async def predict_iris(iris_features: IrisData):
 
         prediction = predict_data(features)
         return IrisResponse(response=int(prediction[0]))
+    
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     

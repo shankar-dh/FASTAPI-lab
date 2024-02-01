@@ -102,6 +102,8 @@ You can also test out the results of your endpoints by interacting with them. Cl
 ![API response](assets/api_response.png)
 
 You can also use other tools like POSTMAN for API testing. 
+FAST API detailed video: https://www.youtube.com/watch?v=7t2alSnE2-I
+
 
 
 
